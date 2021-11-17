@@ -3,7 +3,6 @@ package main.javablackjack.domain;
 import main.javablackjack.domain.card.Cards;
 import main.javablackjack.domain.user.User;
 
-import javax.xml.transform.Result;
 import java.util.Arrays;
 import java.util.function.Function;
 import java.util.function.Predicate;
