@@ -18,7 +18,7 @@ public abstract class User {
         this.hands = new Cards(new ArrayList<>());
     }
 
-    public void proceedInitalPhase(Deck deck) {
+    public void proceedInitialPhase(Deck deck) {
         for (int i = 0; i < INITIAL_HANDS_SIZE; i++) {
             hands.add(deck.pop());
         }

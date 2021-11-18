@@ -21,7 +21,7 @@ public class BlackjackController {
         printInitialDistribution(users.getPlayers());
 
         for (User user : users) {
-            user.proceedInitalPhase(deck);
+            user.proceedInitialPhase(deck);
             printInitialStatus(user);
         }
     }

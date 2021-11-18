@@ -28,8 +28,8 @@ public class Users implements Iterable<User> {
     }
 
     public static Users of(String playerNames, User dealer) {
-        String trimmedNames = playerNames.trim();
-        return of(Arrays.stream(trimmedNames.split(SPLIT_DELIMITER))
+        return of(Arrays.stream(playerNames.split(SPLIT_DELIMITER))
+                .map(String::trim)
                 .map(Player::new)
                 .collect(Collectors.toList()), dealer);
     }
